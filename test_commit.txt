@@ -1,3 +1,0 @@
-First commit successful
-Learned how to use repository, barely
-Remove the .py file
