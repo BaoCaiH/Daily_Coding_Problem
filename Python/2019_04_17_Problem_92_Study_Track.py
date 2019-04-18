@@ -2,11 +2,11 @@
 # coding: utf-8
 
 # ### 2019 April 17th
-# 
+#
 # Problem: We're given a hashmap associating each courseId key with a list of courseIds values, which represents that the prerequisites of `courseId` are `courseId`s. Return a sorted ordering of courses such that we can finish all courses.
-# 
+#
 # Return null if there is no such ordering.
-# 
+#
 # For example, given `{'CSC300': ['CSC100', 'CSC200'], 'CSC200': ['CSC100'], 'CSC100': []}`, should return `['CSC100', 'CSC200', 'CSCS300']`.
 
 # In[15]:
@@ -71,7 +71,3 @@ print('In example 5, the path suggested CSC100 before CSC400 for the same reason
 
 
 # In[ ]:
-
-
-
-
