@@ -4,6 +4,8 @@ Solutions to problems received daily from dailycodingproblem.com
 The solutions are stored by their type so either clone the whole repository or just the type you need.
 As of today, the solutions is in Python 3
 
+[Update] From 2019-04-19, ipynb file will no longer be added, only python file
+
 ## Setup
 
 I recommend Jupyter notebook to run the solution for maximum clarity
