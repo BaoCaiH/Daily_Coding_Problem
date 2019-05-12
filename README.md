@@ -46,7 +46,6 @@ Linux will have python pre-installed, I guess, at least Mint has
 
 Not Jupyter notebook though. Install [Jupyter](https://jupyter.org/install)
 
-=====
 
 ## Run Solutions
 
