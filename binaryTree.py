@@ -56,6 +56,15 @@ class Node:
             sub = sub + self.right.deconstruct(level + '@')
         return [level] + [self.value] + sub
 
+    def nodeValues(self):
+        """Get all the values in the tree."""
+        vals = [self.value]
+        if self.left:
+            vals = vals + self.left.nodeValues()
+        if self.right:
+            vals = vals + self.right.nodeValues()
+        return vals
+
     def minimumLevel(self):
         """Print the level with minimum sum."""
         treeInString = self.deconstruct()
