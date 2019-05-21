@@ -266,3 +266,119 @@ Note:
 The name of a file contains at least a period and an extension.
 
 The name of a directory or sub-directory will not contain a period.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_01_Problem_17_Longest_Absolute_Path.py)
+
+## Problem 18
+
+This problem was asked by Google.
+
+Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.
+
+For example, given array = [10, 5, 2, 7, 8, 7] and k = 3, we should get: [10, 7, 8, 8], since:
+
+```
+10 = max(10, 5, 2)
+7 = max(5, 2, 7)
+8 = max(2, 7, 8)
+8 = max(7, 8, 7)
+```
+
+Do this in O(n) time and O(k) space. You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_02_Problem_18_Max_Value_from_Sub-array_Length_k.py)
+
+## Problem 19
+
+This problem was asked by Facebook.
+
+A builder is looking to build a row of N houses that can be of K different colors. He has a goal of minimizing cost while ensuring that no two neighboring houses are of the same color.
+
+Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_03_Problem_19_n_k_Cost_Matrix.py)
+
+## Problem 20
+
+This problem was asked by Google.
+
+Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.
+
+For example, given A = 3 -> 7 -> 8 -> 10 and B = 99 -> 1 -> 8 -> 10, return the node with value 8.
+
+In this example, assume nodes with the same value are the exact same node objects.
+
+Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_04_Problem_20_Intersect_Node.py)
+
+## Problem 21
+
+This problem was asked by Snapchat.
+
+Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+
+For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_05_Problem_21_Minimum_Classrooms.py)
+
+## Problem 22
+
+This problem was asked by Microsoft.
+
+Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. If there is more than one possible reconstruction, return any of them. If there is no possible reconstruction, then return null.
+
+For example, given the set of words 'quick', 'brown', 'the', 'fox', and the string "thequickbrownfox", you should return ['the', 'quick', 'brown', 'fox'].
+
+Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_06_Problem_22_Return_Sentence.py)
+
+## Problem 23
+
+This problem was asked by Google.
+
+You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
+
+Given this matrix, a start coordinate, and an end coordinate, return the minimum number of steps required to reach the end coordinate from the start. If there is no possible path, then return null. You can move up, left, down, and right. You cannot move through walls. You cannot wrap around the edges of the board.
+
+For example, given the following board:
+
+[[f, f, f, f],
+[t, t, f, t],
+[f, f, f, f],
+[f, f, f, f]]
+and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_07_Problem_23_Minimum_Steps.py)
+
+## Problem 24
+
+This problem was asked by Google.
+
+Implement locking in a binary tree. A binary tree node can be locked or unlocked only if all of its descendants or ancestors are not locked.
+
+Design a binary tree node class with the following methods:
+
+is_locked, which returns whether the node is locked
+lock, which attempts to lock the node. If it cannot be locked, then it should return false. Otherwise, it should lock it and return true.
+unlock, which unlocks the node. If it cannot be unlocked, then it should return false. Otherwise, it should unlock it and return true.
+You may augment the node to add parent pointers or any other property you would like. You may assume the class is used in a single-threaded program, so there is no need for actual locks or mutexes. Each method should run in O(h), where h is the height of the tree.
+
+Solution
+
+## Problem 25
+
+This problem was asked by Facebook.
+
+Implement regular expression matching with the following special characters:
+
+. (period) which matches any single character
+\* (asterisk) which matches zero or more of the preceding element
+That is, implement a function that takes in a string and a valid regular expression and returns whether or not the string matches the regular expression.
+
+For example, given the regular expression "ra." and the string "ray", your function should return true. The same regular expression on the string "raymond" should return false.
+
+Given the regular expression ".\*at" and the string "chat", your function should return true. The same regular expression on the string "chats" should return false.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_02_09_Problem_25_Regular_Expressions.py)
