@@ -113,12 +113,18 @@ Given the root to a binary tree, count the number of unival subtrees.
 
 For example, the following tree has 5 unival subtrees:
 
-`   0<br>
-  / \<br>
- 1   0<br>
-    / \<br>
-   1   0<br>
-  / \<br>
+`   0
+
+  / \
+
+ 1   0
+
+    / \
+
+   1   0
+
+  / \
+  
  1   1`
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_23_Problem_8_Unival_Trees.py)
