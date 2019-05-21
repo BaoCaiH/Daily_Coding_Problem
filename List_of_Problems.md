@@ -124,3 +124,145 @@ For example, the following tree has 5 unival subtrees:
 ```
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_23_Problem_8_Unival_Trees.py)
+
+## Problem 9
+
+This problem was asked by Airbnb.
+
+Given a list of integers, write a function that returns the largest sum of
+non-adjacent numbers. Numbers can be 0 or negative.
+
+For example, [2, 4, 6, 2, 5] should return 13, since we pick 2, 6, and 5.
+[5, 1, 1, 5] should return 10, since we pick 5 and 5.
+
+Follow-up: Can you do this in O(N) time and constant space?
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_24_Problem_9_Largest_Sum_of_Non-adjacent_Numbers.py)
+
+## Problem 10
+
+This problem was asked by Apple.
+
+Implement a job scheduler which takes in a function f and an integer n,
+and calls f after n milliseconds.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_25_Problem_10_Job_Scheduler.py)
+
+## Problem 11
+
+This problem was asked by Twitter.
+
+Implement an autocomplete system. That is, given a query string s and a
+set of all possible query strings, return all strings in the set that have s
+as a prefix.
+
+For example, given the query string de and the set of strings
+[dog, deer, deal], return [deer, deal].
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_26_Problem_11_Auto-correct.py)
+
+## Problem 12
+
+This problem was asked by Amazon.
+
+There exists a staircase with N steps, and you can climb up either 1 or 2
+steps at a time. Given N, write a function that returns the number of unique
+ways you can climb the staircase. The order of the steps matters.
+
+For example, if N is 4, then there are 5 unique ways:
+
+```
+1, 1, 1, 1
+2, 1, 1
+1, 2, 1
+1, 1, 2
+2, 2
+```
+
+What if, instead of being able to climb 1 or 2 steps at a time,
+you could climb any number from a set of positive integers X? For example,
+if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_27_Problem_12_Stepping_ways.py)
+
+## Problem 13
+
+This problem was asked by Amazon.
+
+Given an integer k and a string s, find the length of the longest substring
+that contains at most k distinct characters.
+
+For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_28_Problem_13_Longest_Substring_with_nDistinct_Characters.py)
+
+## Problem 14
+
+This problem was asked by Google.
+
+The area of a circle is defined as πr^2. Estimate π to 3 decimal places
+using a Monte Carlo method.
+
+Hint: The basic equation of a circle is x2 + y2 = r2.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_29_Problem_14_Pi_Calculator.py)
+
+## Problem 15
+
+This problem was asked by Facebook.
+
+Given a stream of elements too large to store in memory,
+pick a random element from the stream with uniform probability.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_30_Problem_15_Random_Picker.py)
+
+## Problem 16
+
+This problem was asked by Twitter.
+
+You run an e-commerce website and want to record the last N order ids in a log.
+Implement a data structure to accomplish this, with the following API:
+
+```
+record(order_id): adds the order_id to the log
+get_last(i): gets the ith last element from the log. i is guaranteed to be smaller than or equal to N.
+```
+
+You should be as efficient with time and space as possible.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_01_31_Problem_16_Database_and_API.py)
+
+## Problem 17
+
+This problem was asked by Google.
+
+Suppose we represent our file system by a string in the following manner:
+
+The string "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext" represents:
+
+dir
+    subdir1
+    subdir2
+        file.ext
+The directory dir contains an empty sub-directory subdir1 and a sub-directory       subdir2 containing a file file.ext.
+
+The string "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2 \n\t\t\tfile2.ext" represents:
+
+dir
+    subdir1
+        file1.ext
+        subsubdir1
+    subdir2
+        subsubdir2
+            file2.ext
+The directory dir contains two sub-directories subdir1 and subdir2. subdir1 contains a file file1.ext and an empty second-level sub-directory subsubdir1. subdir2 contains a second-level sub-directory subsubdir2 containing a file file2.ext.
+
+We are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is "dir/subdir2/subsubdir2/file2.ext", and its length is 32 (not including the double quotes).
+
+Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.
+
+Note:
+
+The name of a file contains at least a period and an extension.
+
+The name of a directory or sub-directory will not contain a period.
