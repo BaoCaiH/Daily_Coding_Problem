@@ -18,7 +18,9 @@ I use Python 3 on MacOS through Atom with Hydrogen installed.
 Install [Homebrew](https://brew.sh/)
 
 `brew install python3
+
 pip3 install --upgrade pip
+
 pip3 install jupyter`
 
 Only these are needed. Atom need to be installed separately if jupyter is not
