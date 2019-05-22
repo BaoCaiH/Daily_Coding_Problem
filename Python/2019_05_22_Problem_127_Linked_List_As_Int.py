@@ -1,8 +1,30 @@
 #!/usr/bin/env python
 # coding: utf-8
-"""A doubly linked list object."""
+"""2019 May 22nd - Daily_Coding_Problem #127."""
 # <markdown>
-# For future use of course
+# ## 2019 May 22nd - Daily_Coding_Problem #127
+#
+# Problem: Let's represent an integer in a linked list format by having each
+# node represent a digit in the number. The nodes make up the number in
+# reversed order.
+#
+# For example, the following linked list:
+#
+# 1 -> 2 -> 3 -> 4 -> 5
+# is the number 54321.
+#
+# Given two linked lists in this format, return their sum in the same
+# linked list format.
+#
+# For example, given
+#
+# 9 -> 9
+#
+# 5 -> 2
+#
+# return 124 (99 + 25) as:
+#
+# 4 -> 2 -> 1
 
 
 # %%
@@ -90,7 +112,7 @@ class doublyLinkedList:
             while n:
                 intSelf = intSelf*10 + (n.value)
                 n = n.next
-                return intSelf
+        return intSelf
 
     def pop(self, position=None):
         """Delete the last item or the item at the given position."""
@@ -142,3 +164,20 @@ class doublyLinkedList:
                 newList.addItemToTail(n.value)
                 n = n.next
             return newList
+
+
+# %%
+num1 = doublyLinkedList()
+num1.addItemToHead(1)
+num1.addItemToHead(2)
+num1.addItemToHead(3)
+num1.addItemToHead(4)
+num1.addItemToHead(5)
+num2 = doublyLinkedList()
+num2.addItemToHead(8)
+num2.addItemToHead(3)
+num2.addItemToHead(7)
+num2.addItemToHead(2)
+num2.addItemToHead(5)
+print(str(num1.asInt()) + ' - ' + str(num2.asInt()))
+num1.asInt() - num2.asInt()

@@ -1841,3 +1841,34 @@ This problem was asked by Facebook.
 Write a function that rotates a list by k elements. For example, `[1, 2, 3, 4, 5, 6]` rotated by two becomes `[3, 4, 5, 6, 1, 2]`. Try solving this without creating a copy of the list. How many swap or move operations do you need?
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_05_21_Problem_126_Rotate_List.py)
+
+## Problem 127
+
+This problem was asked by Microsoft.
+
+Let's represent an integer in a linked list format by having each node represent a digit in the number. The nodes make up the number in reversed order.
+
+For example, the following linked list:
+
+```
+1 -> 2 -> 3 -> 4 -> 5
+```
+
+is the number 54321.
+
+Given two linked lists in this format, return their sum in the same linked list format.
+
+For example, given
+
+```
+9 -> 9
+5 -> 2
+```
+
+return 124 (99 + 25) as:
+
+```
+4 -> 2 -> 1
+```
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_05_22_Problem_127_Linked_List_As_Int.py)
