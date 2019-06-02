@@ -1,57 +1,65 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+"""2019 April 14th - Daily_Coding_Problem #189."""
 # ### 2019 April 14th
-# 
+# %% markdown
 # Problem: Determine whether a tree is a valid binary search tree.
-# 
-# A binary search tree is a tree with two children, left and right, and satisfies the constraint that the key in the left child must be less than or equal to the root and the key in the right child must be greater than or equal to the root.
+#
+# A binary search tree is a tree with two children, left and right,
+# and satisfies the constraint that the key in the left child must be
+# less than or equal to the root and the key in the right child must be
+# greater than or equal to the root.
 
 # In[111]:
 
 
-class Node:                                                 #
-    def __init__(self, value, left = None, right = None):   #
-        self.value = value                                  #
-        self.left = left                                    #
-        self.right = right                                  #
-                                                            #
-def isBinarySearchTree(root):                               #
-                                                            #
-    def isBinarySearchTreeHelper(node):                     # This will return the value of the node if it is
-        if not node:                                        # a binary search tree
-            return None                                     # If there is no node, return nothing
-        value = node.value                                  # Store the value
-        if node.left and node.right:                        # If both children are available
-            left = isBinarySearchTreeHelper(node.left)      # Run the function on the left node
-            right = isBinarySearchTreeHelper(node.right)    # Run the function on the right node
-            if left is not None and right is not None:      # If both children are valid
-                if left < value and right > value:          # Check the rule on the values
-                    return value                            # If true, then return the node value
-                else:                                       # Otherwise
-                    return None                             # Return nothing
-            else:                                           # If either or both children are not valid
-                return None                                 # Return nothing
-        elif not node.left and not node.right:              # If there is no children
-            return value                                    # Return the value
-        else:                                               # If there is one child on either side
-            return None                                     # Return nothing
-                                                            #
-    return ['invalid', 'valid'][bool(isBinarySearchTreeHelper(root))]# Run the helper and return validity
+class Node:
+    """A node class for the binary tree."""
+
+    def __init__(self, value, left=None, right=None):
+        """Initialize a node for a binary tree."""
+        self.value = value
+        self.left = left
+        self.right = right
+
+
+def isBinarySearchTree(root):
+    """Check if the binray tree is a binary search tree."""
+    def isBinarySearchTreeHelper(node):
+        if not node:
+            return None
+        listNodes = [node]
+        if node.left:
+            listNodes = isBinarySearchTreeHelper(node.left) + listNodes
+        if node.right:
+            listNodes = listNodes + isBinarySearchTreeHelper(node.right)
+        return listNodes
+
+    listNodes = isBinarySearchTreeHelper(root)
+    curr = listNodes[0]
+    for i in range(1, len(listNodes)):
+        if curr.value > listNodes[i].value:
+            return False
+        curr = listNodes[i]
+    return True
 
 
 # In[112]:
 
 
-nodeA = Node(10, Node(5, Node(3, Node(2), Node(4)), Node(7, Node(6), Node(8))),
-             Node(15, Node(13, Node(12), Node(14)), Node(17, Node(16), Node(18))))
+nodeA = Node(10, Node(5, Node(3, Node(2), Node(4)),
+             Node(7, Node(6), Node(8))),
+             Node(15, Node(13, Node(12), Node(14)),
+             Node(17, Node(16), Node(18))))
 
 
 # In[113]:
 
 
-nodeB = Node(10, Node(5, Node(3, Node(4), Node(4)), Node(7, Node(8), Node(8))),
-             Node(15, Node(13, Node(12), Node(14)), Node(17, Node(16), Node(18))))
+nodeB = Node(10, Node(5, Node(3, Node(4), Node(4)),
+             Node(7, Node(8), Node(8))),
+             Node(15, Node(13, Node(12), Node(14)),
+             Node(17, Node(16), Node(18))))
 
 
 # In[114]:
@@ -84,7 +92,3 @@ print('Because although the upper level of the tree is valid, the lower level ca
 
 
 # In[ ]:
-
-
-
-

@@ -117,3 +117,18 @@ class Node:
         if self.right:
             paths = paths + self.right.rootToLeaves(path + [self.value])
         return paths
+
+    def minimumPath(self):
+        """Find the minimmum path from root to leaves."""
+        paths = self.rootToLeaves()
+        minPath = None
+        minDistance = None
+        for path in paths:
+            if not minPath:
+                minPath = path
+                minDistance = sum(minPath)
+            else:
+                if sum(path) < minDistance:
+                    minPath = path
+                    minDistance = sum(minPath)
+        return minPath
