@@ -132,3 +132,24 @@ class Node:
                     minPath = path
                     minDistance = sum(minPath)
         return minPath
+
+    def branchTotal(self):
+        """Sum all the value in a branch."""
+        total = self.value
+        if self.left:
+            total = total + self.left.branchTotal()
+        if self.right:
+            total = total + self.right.branchTotal()
+        return total
+
+    def pruneBranch(self):
+        """Prune all branches which have 0 sum."""
+        if not self:
+            return None
+        if self.branchTotal() == 0:
+            return None
+        if self.left:
+            self.left = self.left.pruneBranch()
+        if self.right:
+            self.right = self.right.pruneBranch()
+        return self
