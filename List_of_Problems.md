@@ -2262,3 +2262,40 @@ For example, given the numbers [1, 2, 3, 4] and probabilities [0.1, 0.5, 0.2, 0.
 You can generate random numbers between 0 and 1 uniformly.
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_06_16_Problem_152_Generate_From_Histogram.py)
+
+## Problem 153
+
+Find an efficient algorithm to find the smallest distance (measured in number of words) between any two given words in a string.
+
+For example, given words "hello", and "world" and a text content of "dog cat hello cat dog dog hello cat world", return 1 because there's only one word "cat" in between the two words.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_06_17_Problem_153_Smallest_Distance_Between_2_Words.py)
+
+## Problem 154
+
+This problem was asked by Amazon.
+
+Implement a stack API using only a heap. A stack implements the following methods:
+
+`push(item)`, which adds an element to the stack
+`pop()`, which removes and returns the most recently added element (or throws an error if there is nothing on the stack)
+Recall that a heap has the following operations:
+
+```
+push(item), which adds a new key to the heap
+pop(), which removes and returns the max value of the heap
+```
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_06_18_Problem_154_Heap_Stack.py)
+
+## Problem 155
+
+This problem was asked by MongoDB.
+
+Given a list of elements, find the majority element, which appears more than half the time (`> floor(len(lst) / 2.0)`).
+
+You can assume that such element exists.
+
+For example, given `[1, 2, 1, 1, 3, 4, 0]`, return `1`.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_06_19_Problem_155_Majority_Element.py)
