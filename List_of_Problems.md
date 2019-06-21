@@ -2311,3 +2311,13 @@ For example, given `n` = 13, return 2 since 13 = 3^2 + 2^2 = 9 + 4.
 Given `n` = 27, return 3 since 27 = 3^2 + 3^2 + 3^2 = 9 + 9 + 9.
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_06_20_Problem_156_Smallest_Number_of_Squared.py)
+
+## Problem 157
+
+This problem was asked by Amazon.
+
+Given a string, determine whether any permutation of it is a palindrome.
+
+For example, `carrace` should return true, since it can be rearranged to form `racecar`, which is a palindrome. `daily` should return false, since there's no rearrangement that can form a palindrome.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_06_21_Problem_157_Palindrome_Permutation.py)
