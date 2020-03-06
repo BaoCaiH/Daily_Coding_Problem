@@ -2691,3 +2691,29 @@ For example, if the stack is `[1, 2, 3, 4, 5]`, it should become `[1, 5, 2, 4, 3
 Hint: Try working backwards from the end state.
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_07_14_Problem_180_Interleave_Stack.py)
+
+## Problem 181
+
+This problem was asked by Google.
+
+Given a string, split it into as few strings as possible such that each string is a palindrome.
+
+For example, given the input string `racecarannakayak`,
+
+return `["racecar", "anna", "kayak"]`.
+
+Given the input string `abc`, return `["a", "b", "c"]`.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/2019_07_15_Problem_181_Least_Palindromes_Split.py)
+
+## Problem 182
+
+This problem was asked by Facebook.
+
+A graph is minimally connected if it is connected and there is no edge that can be removed while still leaving the graph connected. For example, any binary tree is minimally-connected.
+
+Given an undirected graph, check if the graph is minimally-connected.
+
+You can choose to represent the graph as either an adjacency matrix or adjacency list.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/problem_182_minimally_connected.py)
