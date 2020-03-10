@@ -2717,3 +2717,21 @@ Given an undirected graph, check if the graph is minimally-connected.
 You can choose to represent the graph as either an adjacency matrix or adjacency list.
 
 [Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/problem_182_minimally_connected.py)
+
+## Problem 183
+
+This problem was asked by Twitch.
+
+Describe what happens when you type a URL into your browser.
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/problem_183_url_request.md)
+
+## Problem 184
+
+This problem was asked by Amazon.
+
+Given `n` numbers, find the greatest common denominator between them.
+
+For example: given the numbers `[42, 56, 14]`, return `14`
+
+[Solution](https://github.com/BaoCaiH/Daily_Coding_Problem/blob/master/Python/problem_184_largest_common_denominator.py)
